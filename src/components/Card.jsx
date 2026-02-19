@@ -50,17 +50,18 @@ const Card = ({ d, timeframe }) => {
           <img src={`${getIcon()}`} alt="icon" />
         </div>
       </div>
-      <div className="bg-card-bg hover:bg-card-hover rounded-xl p-5 absolute w-full lg:h-4/5 h-2/3 top-7 flex lg:flex-col justify-between ">
+      <div className="bg-card-bg hover:bg-card-hover rounded-xl p-5 absolute w-full lg:h-4/5 h-2/3 top-7 flex flex-col justify-between ">
         <div className="flex flex-col ">
           <div className="flex justify-between ">
             <p className="text-[13px]  lg:mb-3 font-normal"> {d.title}</p>
-            <img className="h-1/8" src={dots} alt="" />
+            <img className="lg:h-1/8 h-1/4" src={dots} alt="three dots" />
           </div>
+          
+        </div>
+        <div className=" flex lg:flex-col justify-between ">
           <p className="lg:text-[30px] text-[20px]">
             {d.timeframes[timeframe].current}hrs
           </p>
-        </div>
-        <div className="self-end ">
           <p className="text-[12px] text-white/50">
             {timeframe === "daily"
               ? "Yesterday - "
