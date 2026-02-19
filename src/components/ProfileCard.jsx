@@ -6,7 +6,7 @@ const ProfileCard = ({ timeframe, setTimeframe }) => {
       <div className="bg-primary h-2/3 rounded-md overflow-hidden  flex justify-center lg:flex-col lg:justify-center  lg:p-4">
         <div className='flex w-1/3 justify-center'>
           <img 
-          className='border-2 rounded-full self-center lg:w-1/3 h-1/2 lg:mb-5'
+          className='border-2 rounded-full self-center lg:w-auto  h-1/2 lg:mb-5'
           src={jeremy} alt="a picture of a man" />
         </div>
         <div className='lg:w-1/2 w-2/3 flex flex-col justify-center'>

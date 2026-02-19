@@ -44,13 +44,13 @@ const Card = ({ d, timeframe }) => {
   return (
     <div className="relative">
       <div
-        className={`${getColor()} rounded-t-xl absolute w-full lg:h-4/5 h-1/3`}
+        className={`${getColor()} rounded-xl absolute inset-0 w-full lg:h-4/5 h-1/3`}
       >
         <div className="flex justify-end lg:h-1/2 h-11 px-2">
           <img src={`${getIcon()}`} alt="icon" />
         </div>
       </div>
-      <div className="bg-card-bg hover:bg-card-hover rounded-xl p-5 absolute w-full lg:h-4/5 h-2/3 top-7 flex flex-col justify-between ">
+      <div className="bg-card-bg hover:bg-card-hover rounded-xl p-5 absolute inset-0 w-full lg:h-4/5 h-2/3 top-7 flex flex-col justify-between ">
         <div className="flex flex-col ">
           <div className="flex justify-between ">
             <p className="text-[13px]  lg:mb-3 font-normal"> {d.title}</p>
